@@ -1,0 +1,30 @@
+{
+  "name": "redis-cache-project",
+  "version": "1.0.0",
+  "description": "Express API with a Redis cache-aside layer in front of MongoDB, plus a load-test script",
+  "main": "app.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env app.js",
+    "seed": "node --env-file-if-exists=.env seed.js",
+    "bench": "node --env-file-if-exists=.env benchmark.js"
+  },
+  "keywords": [
+    "redis",
+    "mongodb",
+    "express",
+    "caching",
+    "autocannon"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^8.0.0",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.1",
+    "redis": "^6.3.0"
+  }
+}
